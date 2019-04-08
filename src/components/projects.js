@@ -1,6 +1,6 @@
 import React from "react"
 import reefa from "../images/reefa.png"
-import { FaLaptopCode, FaGithub, TiEye } from "react-icons/fa"
+import { FaLaptopCode, FaGithub } from "react-icons/fa"
 
 function projects() {
   return (
