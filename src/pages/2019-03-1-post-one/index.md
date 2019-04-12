@@ -2,7 +2,7 @@
 path: "/post-one"
 date: "2019-03-1"
 title: "Getting Started with React"
-content: "In this article I present five things that make it easier for you to enter the React world."
+content: "In this article I'm going to show you five tips to make your entry into the world of React go smoother."
 image: undraw_react.png
 author: "Ana Mafla"
 ---
