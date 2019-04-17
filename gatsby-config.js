@@ -41,10 +41,7 @@ module.exports = {
       options: {
         trackingId: `process.env.REACT_APP_GA_TRACKING_ID`,
       },
-
-
-
-
+    },
 
     "gatsby-transformer-remark",
     // this (optional) plugin enables Progressive Web App + Offline functionality
