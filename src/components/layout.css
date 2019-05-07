@@ -729,8 +729,7 @@ header {
 /* projects */
 
 .projects-info {
-  /* background-color: hsla(244, 32.3%, 48.6%, 0.1); */
-  background-color: hsla(282, 31.7%, 48.2%, 0.1);
+  /* background-color: hsla(282, 31.7%, 48.2%, 0.1); */
   padding: 50px;
   margin: 0 -20px 0 -20px;
 }
@@ -743,17 +742,34 @@ header {
 }
 
 .description {
-  /* width: 90%; */
+  padding-right: 2rem;
 }
 
 .link-project {
   margin-bottom: 10px;
 }
 
+.link-project a:hover {
+  color: hsl(244, 32.3%, 48.6%);
+}
+
 @media screen and (max-width: 768px) {
   .project {
     grid-template-areas: "description" "image";
     grid-template-columns: 1fr;
+  }
+
+  .description {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .intro-info {
+    grid-template-areas: "avatar" "info";
+    grid-template-columns: 1fr;
+    padding: 50px;
+    text-align: center;
   }
 }
 

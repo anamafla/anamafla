@@ -8,11 +8,8 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { StaticQuery, graphql } from "gatsby"
-
 import Header from "./header"
-import Menu from "../components/menu"
-
-import { FaLaptopCode, FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa"
+import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa"
 import "./layout.css"
 
 const Layout = ({ children }) => (
@@ -35,16 +32,28 @@ const Layout = ({ children }) => (
           <footer>
             <div className="social-links">
               <div>
-                <a href="https://github.com/anamafla" target="_blank">
+                <a
+                  href="https://github.com/anamafla"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   {" "}
                   <FaGithub />
                 </a>
               </div>
 
-              <a href="https:www.linkedin.com/in/anamafla" target="_blank">
+              <a
+                href="https:www.linkedin.com/in/anamafla"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <FaLinkedin />
               </a>
-              <a href="https://twitter.com/AnaMeMafla" target="_blank">
+              <a
+                href="https://twitter.com/AnaMeMafla"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <FaTwitter />
               </a>
             </div>

@@ -1,0 +1,20 @@
+[
+  {
+    "title": "Reefa",
+    "slug": "",
+    "url": "https://www.reefa.me/",
+    "image": "./images/reefa.png",
+    "description": "Allows you to choose a random winner from meet.com event",
+    "tools": "React.js, Axios, React-router, Bootstrap, Meetup API",
+    "github": "https://github.com/anamafla/Reefa"
+  },
+  {
+    "title": "Recipes ",
+    "slug": "",
+    "url": "https://recipesearcher.netlify.com/",
+    "image": "./images/recipes.png",
+    "tools": "React.js(Hooks), Axios, React-router, Bootstrap, Edamam API",
+    "description": "Allows you to find recipes to fit your lifestyle and health",
+    "github": "https://github.com/anamafla/recipes"
+  }
+]
