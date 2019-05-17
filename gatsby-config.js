@@ -49,8 +49,21 @@ module.exports = {
         trackingId: process.env.GATSBY_GA_TRACKING_ID,
       },
     },
+    {
+      resolve: "gatsby-transformer-remark",
+      options: {
+        plugins: [
+          {
+            resolve: "@weknow/gatsby-remark-codepen",
+            options: {
+              theme: "dark",
+              height: 400,
+            },
+          },
+        ],
+      },
+    },
 
-    "gatsby-transformer-remark",
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // 'gatsby-plugin-offline',
