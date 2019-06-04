@@ -28,6 +28,7 @@ module.exports = {
         path: `./data`,
       },
     },
+
     `gatsby-transformer-json`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
@@ -58,6 +59,12 @@ module.exports = {
             options: {
               theme: "dark",
               height: 400,
+            },
+          },
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              maxWidth: 300,
             },
           },
         ],
