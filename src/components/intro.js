@@ -1,5 +1,5 @@
 import React from "react"
-import test from "../images/undraw_teacher3.png"
+import test from "../images/undraw_freelancer_dev2.png"
 
 import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa"
 
