@@ -24,6 +24,8 @@ With React hooks, we can reproduce the behavior we’re used to in “component 
 | Use lifecycle methods like `componentDidMount()` and `componentDidUpdate()` |                      Use the `useEffect()` hook. |
 | Access context (by setting `contextType`)                                   | Static contextType uses the `useContext()` hook. |
 
+<br/>
+
 ##2. What are React Hooks?
 
 Hooks are functions with names starting with `use` , that let you “hook into” React state and lifecycle features from function components. Hooks don’t work inside classes.

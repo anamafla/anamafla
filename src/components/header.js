@@ -1,31 +1,48 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
-import Menu from "./menu"
+import { BrowserRouter as Router } from "react-router-dom"
+
+import {
+  MDBNavbar,
+  MDBNavbarBrand,
+  MDBNavbarNav,
+  MDBNavItem,
+  MDBNavLink,
+  MDBContainer,
+} from "mdbreact"
 
 const Header = ({ siteTitle }) => (
   <header>
-    <div className="brand">
-      <h1
-        style={{
-          fontSize: "1.45rem",
-          margin: 0,
-        }}
-      >
-        <Link
-          to="/"
-          style={{
-            color: `#8AD5EB`,
-            textDecoration: `none`,
-          }}
-        >
-          <span className="symbol-brand">&lt;</span> {siteTitle}
-          <span className="symbol-brand">/&gt;</span>
-        </Link>
-      </h1>
-    </div>
+    <Router>
+      <div>
+        <MDBNavbar color="white" expand="md" fixed="top" scrolling transparent>
+          <MDBContainer>
+            <MDBNavbarBrand>
+              <h1 className="h1-responsive deep-purple-text ">{siteTitle}</h1>
+            </MDBNavbarBrand>
 
-    <Menu />
+            <MDBNavbarNav left>
+              <MDBNavItem>
+                <Link to="/" style={{ marginLeft: "1.25rem", color: "purple" }}>
+                  {" "}
+                  Home
+                </Link>
+              </MDBNavItem>
+              <MDBNavItem>
+                <Link
+                  to="/blog"
+                  style={{ marginLeft: "1.25rem", color: "purple" }}
+                >
+                  {" "}
+                  Blog
+                </Link>
+              </MDBNavItem>
+            </MDBNavbarNav>
+          </MDBContainer>
+        </MDBNavbar>
+      </div>
+    </Router>
   </header>
 )
 

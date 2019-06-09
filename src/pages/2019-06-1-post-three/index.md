@@ -138,6 +138,8 @@ Define what an element is or does. Examples: role=”navigation”, role=”comp
 | :------- | ------------------------------------------------------------------------------: |
 | `region` | Creates a landmark region that contains the currently expanded accordion panel. |
 
+<br/>
+
 ####Properties
 Define properties of elements, which can be used to give them extra meaning or semantics
 
@@ -147,6 +149,8 @@ Define properties of elements, which can be used to give them extra meaning or s
 | `aria-controls="ID"`      |                                                   Points to the ID of the panel which the header controls. |
 | `aria-labelledby="IDREF"` | Allows you to put an ID on an element, then reference it as being the label for anything else on the page. |
 
+<br/>
+
 ####States
 Special properties that defines the current conditions of elements. The difference between properties and states, is that states can change throughout the lifecycle on an app.
 
@@ -154,3 +158,5 @@ Special properties that defines the current conditions of elements. The differen
 | :--------------------- | ------------------------------------------------------------------------: |
 | `aria-expanded="true"` | Set to true when the Accordion panel is expanded, otherwise set to false. |
 | `aria-disabled="true"` |   Specifies to a screen reader that a form element is currently disabled. |
+
+<br/>

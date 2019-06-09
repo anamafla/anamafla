@@ -10,7 +10,9 @@ import PropTypes from "prop-types"
 import { StaticQuery, graphql } from "gatsby"
 import Header from "./header"
 import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa"
+
 import "./layout.css"
+import Footer from "./footer"
 
 const Layout = ({ children }) => (
   <StaticQuery
@@ -27,21 +29,22 @@ const Layout = ({ children }) => (
       <>
         <Header siteTitle={data.site.siteMetadata.title} />
 
-        <div className="container">
-          <main>{children}</main>
-          <footer>
-            <div className="social-links">
-              <div>
-                <a
-                  href="https://github.com/anamafla"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  {" "}
-                  <FaGithub />
-                </a>
-              </div>
+        <main>{children}</main>
+        <Footer />
 
+        {/* <footer>
+          <div className="social-links">
+            <div>
+              <a
+                href="https://github.com/anamafla"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {" "}
+                <FaGithub />
+              </a>
+            </div>
+            <div>
               <a
                 href="https:www.linkedin.com/in/anamafla"
                 target="_blank"
@@ -49,16 +52,16 @@ const Layout = ({ children }) => (
               >
                 <FaLinkedin />
               </a>
-              <a
-                href="https://twitter.com/AnaMeMafla"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <FaTwitter />
-              </a>
             </div>
-          </footer>
-        </div>
+            <a
+              href="https://twitter.com/AnaMeMafla"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaTwitter />
+            </a>
+          </div>
+        </footer> */}
       </>
     )}
   />

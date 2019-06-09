@@ -41,7 +41,7 @@ module.exports = {
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/undraw_teacher3.png`, // This path is relative to the root of the site.
+        icon: `src/images/undraw_freelancer_dev2.png`, // This path is relative to the root of the site.
       },
     },
     {
