@@ -1,7 +1,7 @@
 import React from "react"
 import Link from "gatsby-link"
 import Img from "gatsby-image"
-import { graphql } from "gatsby"
+
 import Layout from "../components/layout"
 import { MDBContainer } from "mdbreact"
 
