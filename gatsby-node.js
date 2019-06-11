@@ -18,14 +18,7 @@ exports.createPages = ({ graphql, actions }) => {
               date
               author
               image {
-                childImageSharp {
-                  resize(width: 1500, height: 1500) {
-                    src
-                  }
-                  fluid(maxWidth: 786) {
-                    ...GatsbyImageSharpFluid
-                  }
-                }
+                id
               }
             }
           }
@@ -37,10 +30,6 @@ exports.createPages = ({ graphql, actions }) => {
 
     if (res.errors) {
       return Promise.reject(res.errors)
-    }
-
-    if (typeof window !== `undefined`) {
-      const module = require("module")
     }
 
     res.data.allMarkdownRemark.edges.forEach(({ node }) => {

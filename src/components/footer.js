@@ -1,6 +1,5 @@
 import React from "react"
 import { MDBContainer, MDBRow, MDBFooter } from "mdbreact"
-
 import SocialLinks from "./sociallinks"
 
 const Footer = () => {

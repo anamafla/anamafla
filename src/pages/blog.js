@@ -1,7 +1,7 @@
 import React from "react"
 
 import { MDBCol, MDBContainer, MDBRow } from "mdbreact"
-
+import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import PostCard from "../components/postcard"
