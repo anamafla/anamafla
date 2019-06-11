@@ -18,7 +18,11 @@ exports.createPages = ({ graphql, actions }) => {
               date
               author
               image {
-                id
+                childImageSharp {
+                  resize(width: 1500, height: 1500) {
+                    src
+                  }
+                }
               }
             }
           }
