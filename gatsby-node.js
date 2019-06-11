@@ -4,6 +4,8 @@ exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions
   const postTemplate = path.resolve("src/templates/blog-post.js")
 
+  console.log("posTemplate", postTemplate)
+
   return graphql(`
     {
       allMarkdownRemark {
