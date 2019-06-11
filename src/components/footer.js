@@ -1,6 +1,6 @@
 import React from "react"
-import { MDBCol, MDBContainer, MDBRow, MDBFooter } from "mdbreact"
-import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa"
+import { MDBContainer, MDBRow, MDBFooter } from "mdbreact"
+
 import SocialLinks from "./sociallinks"
 
 const Footer = () => {

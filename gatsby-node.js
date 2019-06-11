@@ -1,6 +1,10 @@
 const path = require("path")
 
 exports.createPages = ({ graphql, actions }) => {
+  if (typeof window !== `undefined`) {
+    const module = require("module")
+  }
+
   const { createPage } = actions
   const postTemplate = path.resolve("src/templates/blog-post.js")
 

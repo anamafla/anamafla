@@ -3,10 +3,8 @@ import {
   MDBBtn,
   MDBCard,
   MDBCardBody,
-  MDBCardImage,
   MDBCardTitle,
   MDBCardText,
-  MDBCol,
 } from "mdbreact"
 
 import Image from "gatsby-image"

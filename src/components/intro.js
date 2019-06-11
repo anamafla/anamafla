@@ -1,14 +1,5 @@
 import React from "react"
-import { BrowserRouter as Router } from "react-router-dom"
-import Link from "gatsby-link"
-import {
-  MDBMask,
-  MDBRow,
-  MDBCol,
-  MDBBtn,
-  MDBView,
-  MDBContainer,
-} from "mdbreact"
+import { MDBMask, MDBRow, MDBCol, MDBView, MDBContainer } from "mdbreact"
 import "./layout.css"
 import image from "../images/undraw_freelancer_dev2.png"
 import SocialLinks from "./sociallinks"
