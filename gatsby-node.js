@@ -15,10 +15,6 @@ exports.createPages = ({ graphql, actions }) => {
             id
             frontmatter {
               path
-              title
-              content
-              author
-              date
             }
           }
         }
