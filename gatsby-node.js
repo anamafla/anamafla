@@ -11,8 +11,6 @@ exports.createPages = ({ graphql, actions }) => {
       allMarkdownRemark {
         edges {
           node {
-            html
-            id
             frontmatter {
               path
             }
