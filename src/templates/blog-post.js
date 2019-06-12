@@ -2,7 +2,7 @@ import React from "react"
 import Link from "gatsby-link"
 import Img from "gatsby-image"
 import Layout from "../components/layout"
-import { graphql } from "gatsby"
+
 import { MDBContainer } from "mdbreact"
 
 export default function Template({ data }) {
