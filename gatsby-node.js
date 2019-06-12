@@ -4,15 +4,17 @@ exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions
   const postTemplate = path.resolve("src/templates/blog-post.js")
 
-  console.log("posTemplate", postTemplate)
-
   return graphql(`
     {
-      allMarkdownRemark {
+      allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }) {
         edges {
           node {
+            html
+            id
             frontmatter {
+              date
               path
+              title
             }
           }
         }
