@@ -6,15 +6,17 @@ exports.createPages = ({ graphql, actions }) => {
 
   return graphql(`
     {
-      allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }) {
+      allMarkdownRemark {
         edges {
           node {
             html
             id
             frontmatter {
-              date
               path
               title
+              content
+              date
+              author
             }
           }
         }
