@@ -9,8 +9,8 @@ export default function Template({ data }) {
   const post = data.markdownRemark
   console.log(post)
 
-  if (typeof window !== `undefined`) {
-    return (
+  return (
+    typeof window !== `undefined` && (
       <Layout>
         <MDBContainer className="mt-5 pt-5">
           <br />
@@ -25,7 +25,7 @@ export default function Template({ data }) {
         </MDBContainer>
       </Layout>
     )
-  }
+  )
 }
 
 export const postQuery = graphql`
