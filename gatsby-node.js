@@ -44,7 +44,7 @@ exports.onCreateWebpackConfig = ({ stage, loaders, actions }) => {
       module: {
         rules: [
           {
-            test: /history.js/,
+            test: /react-router-dom/,
             use: loaders.null(),
           },
         ],
