@@ -10,19 +10,21 @@ export default function Template({ data }) {
   console.log(post)
 
   return (
-    <Layout>
-      <MDBContainer className="mt-5 pt-5">
-        <br />
-        <Link to="/blog">Go Back</Link>
+    typeof window !== `undefined` && (
+      <Layout>
+        <MDBContainer className="mt-5 pt-5">
+          <br />
+          <Link to="/blog">Go Back</Link>
 
-        <h1>{post.frontmatter.title}</h1>
-        <Img fluid={post.frontmatter.image.childImageSharp.fluid} />
-        <div dangerouslySetInnerHTML={{ __html: post.html }} />
-        <p>
-          Posted by {post.frontmatter.author} on {post.frontmatter.date}
-        </p>
-      </MDBContainer>
-    </Layout>
+          <h1>{post.frontmatter.title}</h1>
+          <Img fluid={post.frontmatter.image.childImageSharp.fluid} />
+          <div dangerouslySetInnerHTML={{ __html: post.html }} />
+          <p>
+            Posted by {post.frontmatter.author} on {post.frontmatter.date}
+          </p>
+        </MDBContainer>
+      </Layout>
+    )
   )
 }
 
