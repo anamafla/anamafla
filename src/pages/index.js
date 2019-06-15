@@ -36,37 +36,38 @@ function IndexPage() {
   const projects = data.allProjectsJson.edges
 
   return (
-    <Layout>
-      <SEO title="Home" keywords={[`developer`, `front-end`, `react`]} />
+    typeof window !== `undefined` && (
+      <Layout>
+        <SEO title="Home" keywords={[`developer`, `front-end`, `react`]} />
 
-      <Intro />
+        <Intro />
 
-      <section>
-        <MDBContainer>
-          <h2 className="gray-text text-center mt-4"> Projects</h2>
+        <section>
+          <MDBContainer>
+            <h2 className="gray-text text-center mt-4"> Projects</h2>
 
-          <MDBRow className="mt-5">
-            {projects.map(({ node: project }) => {
-              const { title, description, tools, github, url } = project
-              const imageData = project.image.childImageSharp.fluid
-              return (
-                <MDBCol md="6" xl="6">
-                  <ProjectCard
-                    title={title}
-                    description={description}
-                    imageData={imageData}
-                    tools={tools}
-                    github={github}
-                    url={url}
-                  />
-                </MDBCol>
-              )
-            })}
-          </MDBRow>
-        </MDBContainer>
-        >
-      </section>
-    </Layout>
+            <MDBRow className="mt-5">
+              {projects.map(({ node: project }) => {
+                const { title, description, tools, github, url } = project
+                const imageData = project.image.childImageSharp.fluid
+                return (
+                  <MDBCol md="6" xl="6">
+                    <ProjectCard
+                      title={title}
+                      description={description}
+                      imageData={imageData}
+                      tools={tools}
+                      github={github}
+                      url={url}
+                    />
+                  </MDBCol>
+                )
+              })}
+            </MDBRow>
+          </MDBContainer>
+        </section>
+      </Layout>
+    )
   )
 }
 
