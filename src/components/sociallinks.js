@@ -12,7 +12,7 @@ const SocialLinks = () => (
     </a>
 
     <a
-      href="https:www.linkedin.com/in/anamafla"
+      href="https://www.linkedin.com/in/anamafla"
       target="_blank"
       rel="noopener noreferrer"
     >
