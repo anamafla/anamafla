@@ -14,13 +14,26 @@ const Intro = () => (
               <img src={image} alt="Woman at computer" className="img-fluid" />
             </MDBCol>
             <div className="text-center text-md-left col-md-6 mt-xl-5 mb-5">
-              <h2 className="h2-responsive  mt-sm-5">
-                Hi.{" "}
-                <span role="img" aria-label="waving hand">
-                  👋{" "}
-                </span>{" "}
+              <h2
+                className="h2-responsive  mt-sm-5"
+                style={{
+                  display: `inline`,
+                }}
+              >
+                Hi
+              </h2>
+              <div role="img" aria-label="waving hand" className="hand">
+                👋
+              </div>
+              <h2
+                className="h2-responsive  mt-sm-5"
+                style={{
+                  display: `inline`,
+                }}
+              >
                 I'm Ana
               </h2>
+
               <h2 className=" h2-responsive  deep-purple-text  font-weight-bolder mt-sm-5">
                 I'm Front End Developer
               </h2>

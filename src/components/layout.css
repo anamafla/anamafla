@@ -640,6 +640,24 @@ pre tt:after {
   line-height: 1.7;
 }
 
+.hand {
+  width: 50px;
+  height: 50px;
+  position: relative;
+  display: inline-block;
+  font-size: 2rem;
+  animation: waving 1s linear 1s 12 alternate;
+}
+
+@keyframes waving {
+  from {
+    transform: rotate(-5deg);
+  }
+  to {
+    transform: rotate(60deg);
+  }
+}
+
 .social-links {
   display: flex;
   justify-content: space-evenly;
