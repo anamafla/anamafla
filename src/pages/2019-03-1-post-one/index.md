@@ -1,5 +1,5 @@
 ---
-path: "/post-one"
+path: "/getting-started-with-react"
 date: "2019-03-1"
 title: "Getting Started with React"
 content: "Five tips to make your entry into the world of React go smoother."

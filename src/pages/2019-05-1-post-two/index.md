@@ -1,5 +1,5 @@
 ---
-path: "/post-two"
+path: "/introduction-to-hooks"
 date: "2019-05-1"
 title: "Introduction to Hooks"
 content: "This post is an introduction to React Hooks"

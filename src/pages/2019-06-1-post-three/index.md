@@ -1,5 +1,5 @@
 ---
-path: "/post-three"
+path: "/learning-about-web-accessibility"
 date: "2019-06-1"
 title: "Learning about Web Accessibility"
 content: "This post is an introduction to Web Accessibility"
