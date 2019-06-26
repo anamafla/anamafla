@@ -1,8 +1,10 @@
 module.exports = {
   siteMetadata: {
     title: `anamafla`,
-    description: `In this space you will learn more about my work.`,
+    description: `Ana Mafla is a Front End Developer. She loves writing code, learning new technologies, and taking on new challenges`,
     author: `Ana Mafla`,
+    url: `https://www.anamafla.com`,
+    twitterUsername: "@anamemafla",
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
