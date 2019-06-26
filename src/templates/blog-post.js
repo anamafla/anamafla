@@ -4,6 +4,7 @@ import Img from "gatsby-image"
 import Layout from "../components/layout"
 import { graphql } from "gatsby"
 import { MDBContainer } from "mdbreact"
+import SEO from "../components/seo"
 
 export default function Template({ data }) {
   const post = data.markdownRemark
@@ -12,6 +13,10 @@ export default function Template({ data }) {
   return (
     typeof window !== `undefined` && (
       <Layout>
+        <SEO
+          title={post.frontmatter.title}
+          description={post.frontmatter.content}
+        />
         <MDBContainer className="mt-5 pt-5">
           <br />
           <Link to="/blog">Go Back</Link>
