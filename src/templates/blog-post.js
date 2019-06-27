@@ -8,7 +8,6 @@ import SEO from "../components/seo"
 
 export default function Template({ data }) {
   const post = data.markdownRemark
-  console.log(post)
 
   return (
     typeof window !== `undefined` && (

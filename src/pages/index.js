@@ -38,7 +38,7 @@ function IndexPage() {
   return (
     typeof window !== `undefined` && (
       <Layout>
-        <SEO title="Home" keywords={[`developer`, `front-end`, `react`]} />
+        <SEO title="anamafla" keywords={[`developer`, `front-end`, `react`]} />
 
         <Intro />
 
@@ -51,7 +51,7 @@ function IndexPage() {
                 const { title, description, tools, github, url } = project
                 const imageData = project.image.childImageSharp.fluid
                 return (
-                  <MDBCol md="6" xl="6">
+                  <MDBCol md="6" xl="6" key={title}>
                     <ProjectCard
                       title={title}
                       description={description}

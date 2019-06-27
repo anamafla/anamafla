@@ -17,13 +17,19 @@ const ProjectCard = ({ title, description, tools, imageData, github, url }) => {
 
       <MDBCardBody>
         <MDBCardTitle>{title}</MDBCardTitle>
-        <MDBCardText>
+        {/* <MDBCardText>
           <div>{description}</div>
 
           <div>
             <strong>Built using: </strong>
             <p>{tools}</p>
           </div>
+        </MDBCardText> */}
+        <MDBCardText>{description}</MDBCardText>
+
+        <MDBCardText>
+          <strong>Built using: </strong>
+          <span>{tools}</span>
         </MDBCardText>
 
         <MDBBtn

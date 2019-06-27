@@ -20,7 +20,7 @@ const BlogPage = ({ data }) =>
             const { id } = post.node
 
             return (
-              <MDBCol md="6" xl="6">
+              <MDBCol md="6" xl="6" key={title}>
                 <PostCard
                   title={title}
                   content={content}

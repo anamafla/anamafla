@@ -4,6 +4,11 @@
   }
 }
 
+/* header */
+.navbar-nav {
+  flex-direction: row;
+}
+
 /* intro */
 
 #apppage .view {
