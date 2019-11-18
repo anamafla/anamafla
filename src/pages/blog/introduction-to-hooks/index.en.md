@@ -9,7 +9,8 @@ author: "Ana Mafla"
 
 React Hooks is a functionality added in React 16.8, that allow you use state and another React features in function components, something than before was exclusive of class components.
 
-##1. Why use React Hooks?
+## 1. Why use React Hooks?
+
 In React documentation we can find the advantages, basically Hooks allow you:
 
 - Reuse stateful logic without changing your component hierarchy. This makes it easy to share Hooks among many components or with the community.
@@ -18,15 +19,15 @@ In React documentation we can find the advantages, basically Hooks allow you:
 
 With React hooks, we can reproduce the behavior we’re used to in “component classes” in functional components:
 
-| Class Component                                                             |                  Functional component with Hooks |
-| :-------------------------------------------------------------------------- | -----------------------------------------------: |
-| Maintain `state`                                                            |       Component state uses the `useState()` hook |
-| Use lifecycle methods like `componentDidMount()` and `componentDidUpdate()` |                      Use the `useEffect()` hook. |
+| Class Component                                                             | Functional component with Hooks                  |
+| --------------------------------------------------------------------------- | ------------------------------------------------ |
+| Maintain `state`                                                            | Component state uses the `useState()` hook       |
+| Use lifecycle methods like `componentDidMount()` and `componentDidUpdate()` | Use the `useEffect()` hook.                      |
 | Access context (by setting `contextType`)                                   | Static contextType uses the `useContext()` hook. |
 
 <br/>
 
-##2. What are React Hooks?
+## 2. What are React Hooks?
 
 Hooks are functions with names starting with `use` , that let you “hook into” React state and lifecycle features from function components. Hooks don’t work inside classes.
 
@@ -50,13 +51,13 @@ function App() {
 
 React provides a built-in hooks :
 
-####Basic Hooks
+#### Basic Hooks
 
 - useState
 - useEffect
 - useContext
 
-####Additional Hooks
+#### Additional Hooks
 
 - useReducer
 - useCallback
@@ -78,7 +79,8 @@ For that, we are going to build a simple app that ask you your mood today and gi
 <img width=100% src="https://media.giphy.com/media/jxd9pM1TS8FWyBK2fW/giphy.gif" alt="demo mood app" />
 </p>
 
-###useState
+### useState
+
 useState is a Hook, that we call it inside a function component to add some local state to it.
 
 For use it, first we need to import the `useState` Hook from React:
@@ -116,7 +118,7 @@ setMood('Sad');
 setMessage(“"Listen to your favorite song 🎧 🎼");
 ```
 
-In our App, we are going to write a function `handleMood`, that is going to be triggered with the user makes click in the emoticon button, and then our mood is going to be updated it according to `moods` data.
+In our App, we are going to write a function `handleMood`, that is going to be triggered when the user makes click in the emoticon button, and then our mood is going to be updated it according to `moods` data.
 
 ```
 const moods  = [{mood: "happy", message: "Share your joy with others  💃🎉🕺", emoticon: "😁"},
@@ -132,9 +134,10 @@ const moods  = [{mood: "happy", message: "Share your joy with others  💃🎉�
 
 ```
 
-The state update using the updater provided by `useState` hook is asynchronous, and will not immediately reflect and update but will trigger a re-render. If we want to perform an action on state update, we need to use the useEffect hook, much like using `componentDidUpdate` in class components. And that is what we need in our app, when the user click in his mood, immediately show him the according message.
+The state update using the updater provided by `useState` hook is asynchronous, and will not immediately reflect and update but will trigger a re-render. If we want to perform an action on state update, we need to use the `useEffect` hook, much like using `componentDidUpdate` in class components. And that is what we need in our app, when the user click in his mood, immediately show him the according message.
 
-###useEffect
+### useEffect
+
 useEffect let us perform side effect. It’s a function that accept an anonymous function as a first argument :
 
 `useEffect(effect-function)`
@@ -149,7 +152,7 @@ useEffect(() => {
 
 By default useEffect will be called on every render, but we can pass a second argument that is the array of values that the effect depends on in function components. Then we will only re-run the effect when one of those values changes.
 
-If we pass an empty array as the second argument. That is us telling React that we only want to call this effect when the component is mounted.
+If we pass an empty array as the second argument, that is us telling React that we only want to call this effect when the component is mounted.
 
 `useEffect( effect-function, [])`
 

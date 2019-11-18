@@ -19,7 +19,7 @@ In this order of ideas, each developer should aim to make their websites more in
 > Access by everyone regardless of disability is an essential aspect.”
 > Tim Berners - Lee
 
-##Terms
+## Terms
 
 There are some common terms when we talk about accessibility:
 
@@ -32,11 +32,12 @@ There are some common terms when we talk about accessibility:
 
 - **WAI-ARIA**(Accessible Rich Internet Applications): is a technical specification published by the World Wide Web Consortium (W3C) that specifies how to increase the accessibility of web pages.
 
-##Basic Tips
+## Basic Tips
 
 Web accessibility is a very broad topic, but there are some basic considerations that we can take into account, to develop more accessible web content for people with disabilities.
 
-###1. Use semantic HTML
+### 1. Use semantic HTML
+
 Making proper use of HTML elements is very important for web accessibility. This means using the correct HTML elements for their correct purpose as much as possible. When a screen reader, or an assistive device scans a web page, gets information about the HTML structure of the page.
 
 For example, a button to download a file could be marked up like this:
@@ -49,7 +50,7 @@ But its makes much sense to use the correct element `<button/>`, because not onl
 
 We have to remember that when we write semantically correct HTML, we are allowing the browser to know what type of content it’s working with, and by doing this, we are opening the door to assistive technologies like screen readers to do their job.
 
-###2. Include alternative text for images
+### 2. Include alternative text for images
 
 Images should include equivalent alternative text in the markup/code.
 
@@ -60,7 +61,7 @@ Images should include equivalent alternative text in the markup/code.
 Adding alternative text to images allow that people with visual impairments navigating your site through assistive technologies.
 The content of the alt attribute should provide a direct representation of the image. It should not include : “picture of” or “image of”, screen readers automatically announce an image as an image.
 
-###3. Provide meaning for non-standard interactive elements
+### 3. Provide meaning for non-standard interactive elements
 
 Ideally, you should always use native HTML features to provide the semantics required by screen readers, sometimes this is not possible because you are creating something complex that doesn’t have an HTML element to implement it.
 In such cases, WAI- ARIA can be a valuable accessibility tool.
@@ -129,34 +130,37 @@ Below we can see how to use the WAI-ARIA attributes for a custom widget such as 
   </div>
 ```
 
-The ARIA attributes can be divided into roles, states and properties. Below we can see the WAI-ARIA attributes using in the example:
+The ARIA attributes can be divided into roles, states and properties. Below we can see the WAI-ARIA attributes used in the example:
 
-####Roles
+#### Roles
+
 Define what an element is or does. Examples: role=”navigation”, role=”complementary”, role=”banner”, role=”search”, role=”region”
 
-| Role     |                                                                           Usage |
-| :------- | ------------------------------------------------------------------------------: |
+| Role     | Usage                                                                           |
+| -------- | ------------------------------------------------------------------------------- |
 | `region` | Creates a landmark region that contains the currently expanded accordion panel. |
 
 <br/>
 
-####Properties
+#### Properties
+
 Define properties of elements, which can be used to give them extra meaning or semantics
 
-| Attribute                 |                                                                                                      Usage |
-| :------------------------ | ---------------------------------------------------------------------------------------------------------: |
-| `aria-required= “true”`   |                                             Specifies that a form input needs to be filled in to be valid. |
-| `aria-controls="ID"`      |                                                   Points to the ID of the panel which the header controls. |
+| Attribute                 | Usage                                                                                                      |
+| ------------------------- | ---------------------------------------------------------------------------------------------------------- |
+| `aria-required= “true”`   | Specifies that a form input needs to be filled in to be valid.                                             |
+| `aria-controls="ID"`      | Points to the ID of the panel which the header controls.                                                   |
 | `aria-labelledby="IDREF"` | Allows you to put an ID on an element, then reference it as being the label for anything else on the page. |
 
 <br/>
 
-####States
+#### States
+
 Special properties that defines the current conditions of elements. The difference between properties and states, is that states can change throughout the lifecycle on an app.
 
-| Attribute              |                                                                     Usage |
-| :--------------------- | ------------------------------------------------------------------------: |
+| Attribute              | Usage                                                                     |
+| ---------------------- | ------------------------------------------------------------------------- |
 | `aria-expanded="true"` | Set to true when the Accordion panel is expanded, otherwise set to false. |
-| `aria-disabled="true"` |   Specifies to a screen reader that a form element is currently disabled. |
+| `aria-disabled="true"` | Specifies to a screen reader that a form element is currently disabled.   |
 
 <br/>

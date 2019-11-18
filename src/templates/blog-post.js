@@ -33,9 +33,10 @@ export default function Template({ data }) {
 }
 
 export const postQuery = graphql`
-  query BlogPostByPath($path: String!) {
-    markdownRemark(frontmatter: { path: { eq: $path } }) {
+  query BlogPostByPath($slug: String!) {
+    markdownRemark(fields: { slug: { eq: $slug } }) {
       html
+      id
       frontmatter {
         path
         title
@@ -44,11 +45,15 @@ export const postQuery = graphql`
         date
         image {
           childImageSharp {
-            fluid(maxWidth: 400, maxHeight: 250) {
+            fluid(maxHeight: 250, maxWidth: 400) {
               ...GatsbyImageSharpFluid
             }
           }
         }
+      }
+      fields {
+        langKey
+        slug
       }
     }
   }

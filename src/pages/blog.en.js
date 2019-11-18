@@ -17,6 +17,7 @@ const BlogPage = ({ data }) =>
         <MDBRow>
           {data.allMarkdownRemark.edges.map(post => {
             const { title, content, date, path, image } = post.node.frontmatter
+            const { slug } = post.node.fields
             const { id } = post.node
 
             return (
@@ -28,6 +29,7 @@ const BlogPage = ({ data }) =>
                   id={id}
                   path={path}
                   image={image}
+                  slug={slug}
                 />
               </MDBCol>
             )
@@ -38,17 +40,18 @@ const BlogPage = ({ data }) =>
   )
 
 export const pageQuery = graphql`
-  query BlogIndexQuery {
-    allMarkdownRemark {
+  query BlogEnglishQuery {
+    allMarkdownRemark(
+      filter: { fields: { langKey: { regex: "/(en|any)/" } } }
+    ) {
       edges {
         node {
-          id
           frontmatter {
-            path
             title
-            date
             content
             author
+            path
+            date
             image {
               childImageSharp {
                 fluid {
@@ -56,6 +59,10 @@ export const pageQuery = graphql`
                 }
               }
             }
+          }
+          fields {
+            langKey
+            slug
           }
         }
       }

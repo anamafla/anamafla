@@ -1,4 +1,5 @@
 import React from "react"
+
 import {
   MDBBtn,
   MDBCard,
@@ -9,14 +10,14 @@ import {
 
 import Image from "gatsby-image"
 
-const PostCard = ({ id, title, content, image, date, path }) => {
+const PostCard = ({ id, title, content, image, date, path, slug }) => {
   return (
     <MDBCard className="mb-4 mt-4 mx-auto" style={{ width: "22rem" }}>
       <Image fluid={image.childImageSharp.fluid} />
       <MDBCardBody>
         <MDBCardTitle>{title}</MDBCardTitle>
         <MDBCardText>{content}</MDBCardText>
-        <MDBBtn color="cyan" href={path}>
+        <MDBBtn color="cyan" href={slug}>
           Read more
         </MDBBtn>
       </MDBCardBody>

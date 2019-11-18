@@ -1,3 +1,10 @@
+const supportedLanguages = [
+  { id: "en", label: "English" },
+  { id: "es", label: "Español" },
+]
+
+const defaultLanguage = "en"
+
 module.exports = {
   siteMetadata: {
     title: `anamafla`,
@@ -5,6 +12,8 @@ module.exports = {
     author: `Ana Mafla`,
     url: `https://www.anamafla.com`,
     twitterUsername: "@anamemafla",
+    defaultLanguage,
+    supportedLanguages,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -14,6 +23,15 @@ module.exports = {
       options: {
         name: `images`,
         path: `${__dirname}/src/images`,
+      },
+    },
+
+    // markdown-driven pages
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `markdown`,
+        path: `${__dirname}/src/pages/blog`,
       },
     },
     {
@@ -70,6 +88,39 @@ module.exports = {
             },
           },
         ],
+      },
+    },
+    {
+      resolve: "gatsby-plugin-i18n",
+      options: {
+        langKeyDefault: "en",
+        useLangKeyLayout: false,
+        prefixDefault: false,
+        markdownRemark: {
+          postPage: "src/templates/blog-post.js",
+          query: `
+           {
+             allMarkdownRemark {
+               edges {
+                 node {
+                   fields {
+                   slug,
+                   langKey
+                   }
+                 }
+               }
+             }
+           }
+          `,
+        },
+      },
+    },
+    {
+      resolve: "gatsby-plugin-i18n",
+      options: {
+        indexPage: "src/templates/blog-index.js",
+        indexUrl: "/test/",
+        langKeyForNull: "any",
       },
     },
 
