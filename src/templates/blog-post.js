@@ -38,7 +38,6 @@ export const postQuery = graphql`
       html
       id
       frontmatter {
-        path
         title
         content
         author

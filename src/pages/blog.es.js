@@ -50,7 +50,6 @@ export const pageQuery = graphql`
             title
             content
             author
-            path
             date
             image {
               childImageSharp {
