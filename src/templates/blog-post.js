@@ -8,6 +8,7 @@ import SEO from "../components/seo"
 
 export default function Template({ data }) {
   const post = data.markdownRemark
+  const lang = data.markdownRemark.fields.langKey
 
   return (
     typeof window !== `undefined` && (
@@ -15,18 +16,24 @@ export default function Template({ data }) {
         <SEO
           title={post.frontmatter.title}
           description={post.frontmatter.content}
+          lang={lang}
         />
-        <MDBContainer className="mt-5 pt-5">
-          <br />
-          <Link to="/blog">Go Back</Link>
 
-          <h1>{post.frontmatter.title}</h1>
-          <Img fluid={post.frontmatter.image.childImageSharp.fluid} />
-          <div dangerouslySetInnerHTML={{ __html: post.html }} />
-          <p>
-            Posted by {post.frontmatter.author} on {post.frontmatter.date}
-          </p>
-        </MDBContainer>
+        <main>
+          <article>
+            <MDBContainer className="mt-5 pt-5">
+              <br />
+              <Link to="/blog">Go Back</Link>
+
+              <h1>{post.frontmatter.title}</h1>
+              <Img fluid={post.frontmatter.image.childImageSharp.fluid} />
+              <div dangerouslySetInnerHTML={{ __html: post.html }} />
+              <p>
+                Posted by {post.frontmatter.author} on {post.frontmatter.date}
+              </p>
+            </MDBContainer>
+          </article>
+        </main>
       </Layout>
     )
   )
