@@ -115,14 +115,6 @@ module.exports = {
         },
       },
     },
-    {
-      resolve: "gatsby-plugin-i18n",
-      options: {
-        indexPage: "src/templates/blog-index.js",
-        indexUrl: "/test/",
-        langKeyForNull: "any",
-      },
-    },
 
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline

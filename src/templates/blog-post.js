@@ -12,29 +12,31 @@ export default function Template({ data }) {
 
   return (
     typeof window !== `undefined` && (
-      <Layout>
+      <>
         <SEO
           title={post.frontmatter.title}
           description={post.frontmatter.content}
           lang={lang}
         />
 
-        <main>
-          <article>
-            <MDBContainer className="mt-5 pt-5">
-              <br />
-              <Link to="/blog">Go Back</Link>
+        <Layout>
+          <main>
+            <article>
+              <MDBContainer className="mt-5 pt-5">
+                <br />
+                <Link to="/blog">Go Back</Link>
 
-              <h1>{post.frontmatter.title}</h1>
-              <Img fluid={post.frontmatter.image.childImageSharp.fluid} />
-              <div dangerouslySetInnerHTML={{ __html: post.html }} />
-              <p>
-                Posted by {post.frontmatter.author} on {post.frontmatter.date}
-              </p>
-            </MDBContainer>
-          </article>
-        </main>
-      </Layout>
+                <h1>{post.frontmatter.title}</h1>
+                <Img fluid={post.frontmatter.image.childImageSharp.fluid} />
+                <div dangerouslySetInnerHTML={{ __html: post.html }} />
+                <p>
+                  Posted by {post.frontmatter.author} on {post.frontmatter.date}
+                </p>
+              </MDBContainer>
+            </article>
+          </main>
+        </Layout>
+      </>
     )
   )
 }
