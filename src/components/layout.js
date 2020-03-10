@@ -7,6 +7,10 @@
 
 import React from "react"
 import PropTypes from "prop-types"
+
+import "bootstrap-css-only/css/bootstrap.min.css"
+import "mdbreact/dist/css/mdb.css"
+
 import { StaticQuery, graphql } from "gatsby"
 import Header from "./header"
 
