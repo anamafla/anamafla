@@ -11,6 +11,8 @@ import PropTypes from "prop-types"
 import "bootstrap-css-only/css/bootstrap.min.css"
 import "mdbreact/dist/css/mdb.css"
 
+// import "bootstrap/dist/css/bootstrap.css"
+
 import { StaticQuery, graphql } from "gatsby"
 import Header from "./header"
 
