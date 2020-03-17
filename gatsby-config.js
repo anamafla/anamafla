@@ -12,6 +12,7 @@ module.exports = {
     author: `Ana Mafla`,
     url: `https://www.anamafla.com`,
     twitterUsername: "@anamemafla",
+    image: `${__dirname}/src/images/undraw_freelancer_dev2.png`,
     defaultLanguage,
     supportedLanguages,
   },

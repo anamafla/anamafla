@@ -8,7 +8,11 @@ import PostCard from "../components/postcard"
 
 const BlogPage = ({ data }) => (
   <Layout>
-    <SEO title="Home" keywords={[`developer`, `front-end`, `react`]} />
+    <SEO
+      title="Blog"
+      description="Artículos sobre desarrollo web de Ana Mafla"
+      keywords={[`desarrollo web`, `gatsby`, `react`, `react-hooks`]}
+    />
 
     <MDBContainer className="mt-5 pt-5">
       <h2 className="gray-text text-center mt-5"> Ultimas Publicaciones</h2>

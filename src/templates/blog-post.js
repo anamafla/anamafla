@@ -5,6 +5,7 @@ import Layout from "../components/layout"
 import { graphql } from "gatsby"
 import { MDBContainer } from "mdbreact"
 import SEO from "../components/seo"
+import { pseudoRandomBytes } from "crypto"
 
 export default function Template({ data }) {
   const post = data.markdownRemark
@@ -16,6 +17,7 @@ export default function Template({ data }) {
         <SEO
           title={post.frontmatter.title}
           description={post.frontmatter.content}
+          image={post.frontmatter.image}
           lang={lang}
         />
 
