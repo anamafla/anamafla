@@ -30,11 +30,7 @@ function SEO({ description, lang, meta, keywords, title, image }) {
 
   const metaDescription = description || site.siteMetadata.description
 
-  const metaImage =
-    image ||
-    site.siteMetadata.image ||
-    "https://cdn.pixabay.com/photo/2014/05/02/21/49/home-office-336373_1280.jpg"
-
+  const metaImage = image || site.siteMetadata.image
   return (
     <Helmet
       htmlAttributes={{
