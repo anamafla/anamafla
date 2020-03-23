@@ -30,7 +30,18 @@ function SEO({ description, lang, meta, keywords, title, image }) {
 
   const metaDescription = description || site.siteMetadata.description
 
-  const metaImage = image || site.siteMetadata.image
+  const imageSrc = image || site.siteMetadata.image
+
+  let origin = ""
+
+  if (typeof window !== "undefined") {
+    origin = window.location.origin
+  }
+
+  const metaImage = origin + imageSrc
+
+  console.log("metaImage", metaImage)
+
   return (
     <Helmet
       htmlAttributes={{

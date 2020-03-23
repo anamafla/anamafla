@@ -11,6 +11,8 @@ export default function Template({ data }) {
   const post = data.markdownRemark
   const lang = data.markdownRemark.fields.langKey
 
+  console.log("image", post.frontmatter.image)
+
   console.log("image", post.frontmatter.image.childImageSharp.fluid.src)
 
   return (
