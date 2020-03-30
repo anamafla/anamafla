@@ -30,9 +30,10 @@ function SEO({ description, lang, meta, keywords, title, image }) {
 
   const metaDescription = description || site.siteMetadata.description
 
-  const imageSrc = image || site.siteMetadata.image
+  const imageSrc =
+    image || "/static/fab7b9b59ca66a5e32367f49d0ed0aef/fb340/undraw_react.png"
 
-  let origin = ""
+  let origin = "https://www.anamafla.com/"
 
   if (typeof window !== "undefined") {
     origin = window.location.origin
