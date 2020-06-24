@@ -5,8 +5,8 @@ import Layout from "../components/layout"
 
 import SEO from "../components/seo"
 import ProjectCard from "../components/projectcard"
-
 import Intro from "../components/intro"
+import PatternHalfTriangleGradients from "../components/patternHalfTriangle"
 
 function IndexPage() {
   const data = useStaticQuery(graphql`
@@ -38,28 +38,29 @@ function IndexPage() {
     <>
       <SEO title="anamafla" keywords={[`developer`, `front-end`, `react`]} />
 
-      <Layout>
+      <Layout transparent={true}>
         <Intro />
 
-        <section>
-          <MDBContainer>
-            <h2 className="gray-text text-center mt-4"> Projects</h2>
-
+        <section id={"projects"}>
+          <MDBContainer className="mt-5 pt-5">
+            <h2 className="gray-text text-center mt-5"> Projects</h2>
             <MDBRow className="mt-5">
               {projects.map(({ node: project }) => {
                 const { title, description, tools, github, url } = project
                 const imageData = project.image.childImageSharp.fluid
                 return (
-                  <MDBCol md="6" xl="6" key={title}>
-                    <ProjectCard
-                      title={title}
-                      description={description}
-                      imageData={imageData}
-                      tools={tools}
-                      github={github}
-                      url={url}
-                    />
-                  </MDBCol>
+                  <>
+                    <MDBCol md="6" xl="6" key={title}>
+                      <ProjectCard
+                        title={title}
+                        description={description}
+                        imageData={imageData}
+                        tools={tools}
+                        github={github}
+                        url={url}
+                      />
+                    </MDBCol>
+                  </>
                 )
               })}
             </MDBRow>

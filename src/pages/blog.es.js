@@ -7,7 +7,7 @@ import SEO from "../components/seo"
 import PostCard from "../components/postcard"
 
 const BlogPage = ({ data }) => (
-  <Layout>
+  <Layout transparent={false}>
     <SEO
       title="Blog"
       description="Artículos sobre desarrollo web de Ana Mafla"

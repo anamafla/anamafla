@@ -7,7 +7,7 @@ const defaultLanguage = "en"
 
 module.exports = {
   siteMetadata: {
-    title: `anamafla`,
+    title: `Ana Mafla`,
     description: `Ana Mafla is a Front End Developer. She loves writing code, learning new technologies, and taking on new challenges`,
     author: `Ana Mafla`,
     url: `https://www.anamafla.com`,
@@ -62,7 +62,7 @@ module.exports = {
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/favicon-32x32.png`, // This path is relative to the root of the site.
+        icon: `src/images/favicon_anamafla.png`, // This path is relative to the root of the site.
       },
     },
     {

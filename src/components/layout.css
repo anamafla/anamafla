@@ -13,6 +13,33 @@
   background-color: #e3f7fd;
 }
 
+.line {
+  width: 1447.75px;
+  height: 6px;
+  left: 3.02px;
+  top: 86px;
+
+  background: linear-gradient(
+    81.48deg,
+    #5954a4 3.42%,
+    rgba(138, 84, 162, 0.51) 43.85%,
+    #8ad5eb 81.83%
+  );
+  transform: matrix(1, 0, 0, 1, 0, 0);
+}
+
+a.link-menu {
+  margin-left: 1.2em;
+  margin-right: 1.2em;
+  color: white;
+  padding: 0.2em;
+}
+
+a.link-menu:hover {
+  font-size: 1.1em;
+  background-color: #5954a4;
+}
+
 /* intro */
 
 /* .jumbotron {
@@ -30,13 +57,69 @@
   }
 } */
 
-#intro .view {
+.up-left {
+  position: absolute;
+  bottom: -40px;
+}
+.up-right {
+  position: absolute;
+  bottom: -40px;
+  right: 0;
+  transform: rotateY(180deg);
+}
+
+.down-left {
+  position: absolute;
+  top: -40px;
+  transform: rotateX(180deg);
+}
+
+.down-right {
+  position: absolute;
+  top: -40px;
+  transform: rotateY(180deg) rotateX(180deg);
+}
+
+#intro {
+  position: relative;
+  background: #04254e;
+  /* background: #1c2a48; */
+  /* background: #5954a4;
+  background: #8a54a2; */
+  height: 90vh;
+}
+
+#intro h2 {
+  font-size: 3em;
+  font-weight: bolder;
+  color: white;
+  padding: 0.5em;
+}
+
+#intro h5 {
+  color: white;
+}
+.intro-content {
+  position: relative;
+  top: 50%;
+  transform: translateY(-45%);
+  text-align: center;
+}
+
+#projects {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+/* #intro .view {
   background-image: url("../images/testbackground3.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
   height: 100vh;
-}
+} */
 
 #intro h6 {
   line-height: 1.7;
@@ -94,6 +177,5 @@
 }
 
 footer {
-  /* background-color: hsla(194, 71%, 73%, 0.5); */
-  background-color: #e3f7fd;
+  background: #04254e;
 }

@@ -9,66 +9,86 @@ import {
   MDBContainer,
 } from "mdbreact"
 
-const Header = ({ siteTitle }) => (
-  // <nav
-  //   className="navbar navbar-expand-md navbar-light sticky-top"
-  //   // style={{ backgroundColor: "#8AD5EB" }}
-  // >
-  //   <a className="navbar-brand" href="/">
-  //     <h1 className="h1-responsive deep-purple-text ">{siteTitle}</h1>
-  //   </a>
-  //   <button
-  //     className="navbar-toggler"
-  //     type="button"
-  //     data-toggle="collapse"
-  //     data-target="#navbarSupportedContent"
-  //     aria-controls="navbarSupportedContent"
-  //     aria-expanded="false"
-  //     aria-label="Toggle navigation"
-  //   >
-  //     <span className="navbar-toggler-icon"></span>
-  //   </button>
+import image from "../images/favicon_anamafla.png"
 
-  //   <div className="collapse navbar-collapse" id="navbarSupportedContent">
-  //     <ul className="navbar-nav mr-auto">
-  //       <li className="nav-item">
-  //         <Link to="/" style={{ marginLeft: "1.25rem", color: "purple" }}>
-  //           {" "}
-  //           Home
-  //         </Link>
-  //       </li>
-  //       <li className="nav-item">
-  //         <Link to="/blog" style={{ marginLeft: "1.25rem", color: "purple" }}>
-  //           {" "}
-  //           Blog
-  //         </Link>
-  //       </li>
-  //     </ul>
-  //   </div>
-  // </nav>
+const Header = ({ siteTitle, transparent }) => (
+  <>
+    {transparent ? (
+      <MDBNavbar
+        color="mdb-color darken-3"
+        expand="md"
+        fixed="top"
+        scrolling
+        transparent
+      >
+        <MDBContainer>
+          <MDBNavbarBrand className="h2-responsive deep-purple-text ">
+            <Link to="/">
+              <img
+                src={image}
+                style={{ width: "60px" }}
+                alt="logo"
+                className="img-fluid"
+              />
+            </Link>
+          </MDBNavbarBrand>
 
-  <MDBNavbar color="white" expand="md" fixed="top" scrolling transparent>
-    <MDBContainer>
-      <MDBNavbarBrand>
-        <h1 className="h1-responsive deep-purple-text ">{siteTitle}</h1>
-      </MDBNavbarBrand>
+          <MDBNavbarNav right>
+            <MDBNavItem>
+              <Link to="/" className="link-menu">
+                Home
+              </Link>
+            </MDBNavItem>
+            <MDBNavItem>
+              <Link to="/#projects" className="link-menu">
+                Projects
+              </Link>
+            </MDBNavItem>
 
-      <MDBNavbarNav left>
-        <MDBNavItem>
-          <Link to="/" style={{ marginLeft: "1.25rem", color: "purple" }}>
-            {" "}
-            Home
-          </Link>
-        </MDBNavItem>
-        <MDBNavItem>
-          <Link to="/blog" style={{ marginLeft: "1.25rem", color: "purple" }}>
-            {" "}
-            Blog
-          </Link>
-        </MDBNavItem>
-      </MDBNavbarNav>
-    </MDBContainer>
-  </MDBNavbar>
+            <MDBNavItem>
+              <Link to="/blog" className="link-menu">
+                Blog
+              </Link>
+            </MDBNavItem>
+          </MDBNavbarNav>
+        </MDBContainer>
+      </MDBNavbar>
+    ) : (
+      <MDBNavbar color="mdb-color darken-3" expand="md" fixed="top" scrolling>
+        <MDBContainer>
+          <MDBNavbarBrand className="h2-responsive deep-purple-text ">
+            <Link to="/">
+              <img
+                src={image}
+                style={{ width: "60px" }}
+                alt="logo"
+                className="img-fluid"
+              />
+            </Link>
+          </MDBNavbarBrand>
+
+          <MDBNavbarNav right>
+            <MDBNavItem>
+              <Link to="/" className="link-menu">
+                Home
+              </Link>
+            </MDBNavItem>
+            <MDBNavItem>
+              <Link to="/#projects" className="link-menu">
+                Projects
+              </Link>
+            </MDBNavItem>
+
+            <MDBNavItem>
+              <Link to="/blog" className="link-menu">
+                Blog
+              </Link>
+            </MDBNavItem>
+          </MDBNavbarNav>
+        </MDBContainer>
+      </MDBNavbar>
+    )}
+  </>
 )
 
 Header.propTypes = {
