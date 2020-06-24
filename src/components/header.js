@@ -34,11 +34,11 @@ const Header = ({ siteTitle, transparent }) => (
           </MDBNavbarBrand>
 
           <MDBNavbarNav right>
-            <MDBNavItem>
+            {/* <MDBNavItem>
               <Link to="/" className="link-menu">
                 Home
               </Link>
-            </MDBNavItem>
+            </MDBNavItem> */}
             <MDBNavItem>
               <Link to="/#projects" className="link-menu">
                 Projects
@@ -68,11 +68,11 @@ const Header = ({ siteTitle, transparent }) => (
           </MDBNavbarBrand>
 
           <MDBNavbarNav right>
-            <MDBNavItem>
+            {/* <MDBNavItem>
               <Link to="/" className="link-menu">
                 Home
               </Link>
-            </MDBNavItem>
+            </MDBNavItem> */}
             <MDBNavItem>
               <Link to="/#projects" className="link-menu">
                 Projects
