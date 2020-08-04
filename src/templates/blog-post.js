@@ -1,11 +1,12 @@
 import React from "react"
-import Link from "gatsby-link"
+
 import Img from "gatsby-image"
 import Layout from "../components/layout"
 import { graphql } from "gatsby"
-import { MDBContainer } from "mdbreact"
+import { MDBContainer, MDBCol } from "mdbreact"
 import SEO from "../components/seo"
-import { pseudoRandomBytes } from "crypto"
+import { defineCustomElements as deckDeckGoHighlightElement } from "@deckdeckgo/highlight-code/dist/loader"
+deckDeckGoHighlightElement()
 
 export default function Template({ data }) {
   const post = data.markdownRemark
@@ -24,14 +25,16 @@ export default function Template({ data }) {
         <main>
           <article>
             <MDBContainer className="mt-5 pt-5">
-              <br />
+              <MDBCol sm="10" md="10" lg="8" xl="8" className="mr-auto ml-auto">
+                <br />
 
-              <h1>{post.frontmatter.title}</h1>
-              <Img fluid={post.frontmatter.image.childImageSharp.fluid} />
-              <div dangerouslySetInnerHTML={{ __html: post.html }} />
-              <p>
-                Posted by {post.frontmatter.author} on {post.frontmatter.date}
-              </p>
+                <h1>{post.frontmatter.title}</h1>
+                <Img fluid={post.frontmatter.image.childImageSharp.fluid} />
+                <div dangerouslySetInnerHTML={{ __html: post.html }} />
+                <p>
+                  Posted by {post.frontmatter.author} on {post.frontmatter.date}
+                </p>
+              </MDBCol>
             </MDBContainer>
           </article>
         </main>
