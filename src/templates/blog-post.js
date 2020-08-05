@@ -23,7 +23,7 @@ export default function Template({ data }) {
         />
 
         <main>
-          <article>
+          <article className="blog-post">
             <MDBContainer className="mt-5 pt-5">
               <MDBCol sm="10" md="10" lg="8" xl="8" className="mr-auto ml-auto">
                 <br />
