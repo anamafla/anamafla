@@ -57,6 +57,12 @@ a.link-menu:hover {
   }
 } */
 
+@media only screen and (max-width: 480px) {
+  .triangle {
+    display: none;
+  }
+}
+
 .up-left {
   position: absolute;
   bottom: -40px;
@@ -104,6 +110,16 @@ a.link-menu:hover {
   top: 50%;
   transform: translateY(-45%);
   text-align: center;
+  animation: fade 2s ease-in;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.2;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 #projects {
@@ -194,8 +210,12 @@ footer {
   background-position: -2px -2px, -2px -2px, -1px -1px, -1px -1px;
 }
 
-.blogpost h2,
-h3 {
+article h2 {
+  margin: 2rem 0 1rem;
+  word-spacing: 0.25rem;
+}
+
+article h3 {
   margin: 2rem 0 1rem;
   word-spacing: 0.25rem;
 }

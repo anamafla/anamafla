@@ -23,13 +23,10 @@ const Intro = () => (
         </h2>
         <h2>Front End Developer</h2>
 
-        <h5 className="mt-4 mb-4">
+        <h5 className="mt-4 mb-4 lead">
           I love writing code, learning new technologies, and taking on new
           challenges
         </h5>
-        <div className="row">
-          <SocialLinks />
-        </div>
       </div>
       <PatternHalfTriangleGradients
         position={"right"}

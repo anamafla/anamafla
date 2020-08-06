@@ -6,12 +6,13 @@ export default function PatternHalfTriangleGradients({ position, direction }) {
 
   return (
     <svg
-      className={`${directionTriangle}-${positionTriangle}`}
+      className={`${directionTriangle}-${positionTriangle} triangle`}
       width="350"
-      height="655"
-      viewBox="0 0 350 655"
+      height="640"
+      viewBox="0 0 350 640"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
+      preserveAspectRatio="xMinYMin meet"
     >
       <path
         d="M124.33 517.5C122.406 520.833 117.594 520.833 115.67 517.5L72.3686 442.5C70.4441 439.167 72.8497 435 76.6987 435H163.301C167.15 435 169.556 439.167 167.631 442.5L124.33 517.5Z"
