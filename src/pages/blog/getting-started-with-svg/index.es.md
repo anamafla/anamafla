@@ -9,19 +9,19 @@ author: "Ana Mafla"
 
 ## Que es SVG?
 
-SVG(Scalable Vector Graphic) significa Graficos vectoriales escalables.
+SVG significa Gráficos vectoriales escalables.
 
 Un archivo SVG es un formato de archivo de imagen vectorial. Los gráficos vectoriales estan basados en formúlas matématicas que definen figuras geométricas tales como polígonos, líneas, curvas, círculos y rectángulos.
 
-Ser "escalable" signica que el usuario puede escalar la imagen SVG, aumentando y disminuyendo su tamaño sin pérdida de calidad. Esto es posible porque los gráficos están definidos como números en lugar de pixeles.
+Ser "escalable" signica que el usuario puede escalar la imagen SVG, aumentando y disminuyendo su tamaño sin perder la calidad. Esto es posible porque los gráficos están definidos como números en lugar de pixeles.
 
-PNG, GIF, and JPG son formatos raster. Los archivos raster están hechos de pixeles, o puntos únicos de color. Aparecen borrosos cuando se escala hacia arriba y en pantallas de mayor resolución.
+PNG, GIF, and JPG son formatos raster. Los archivos raster están hechos de pixeles, o puntos únicos de color, estos aparecen borrosos cuando se escala hacia arriba y en pantallas de mayor resolución.
 
 <img width=80% src="Raster_vs_Vector.png" alt="Raster VS Vector image" />
 
 ## Como incluir un elemento SVG?
 
-Tu puedes incluir una imagen SVG en un archivo HTML de varias maneras:
+Podemos incluir una imagen SVG en un archivo HTML de varias maneras:
 
 - Usando un elemento img
 
@@ -50,7 +50,7 @@ Tu puedes incluir una imagen SVG en un archivo HTML de varias maneras:
 
 ## Como crear un elemento SVG?
 
-Vamos a crear una carita feliz, pero primero es importante comprender el sistema de coordenadas
+Para conocer como crear un elemento SVG, vamos a crear una sencilla carita feliz, pero primero es importante comprender el sistema de coordenadas.
 
 En el sistema de coordenadas de SVG el punto x= 0, y= 0 esta en la esquina superior izquierda. A medida que "y" aumenta en SVG, los puntos y las figuras se mueven hacia abajo.
 
@@ -78,7 +78,7 @@ En el sistema de coordenadas de SVG el punto x= 0, y= 0 esta en la esquina super
 
 ### 1. Creando nuestro primer elemento SVG
 
-El primer paso es usar el elemento `<svg>`. El elemento `<svg>` es un contenedor que define un nuevo sistema de coordenadas y viewport. El viewport es el area visible de la imagen SVG. Tu puedes especificar el tamaño del viewport usando los atributos `width` and `height` del elemento svg. Si no especificas ninguna unidad dentro de los atributos de ancho(`width`) y alto(`height`), se supone que las unidades son píxeles.
+El primer paso es usar el elemento `<svg>`. El elemento `<svg>` es un contenedor que define un nuevo sistema de coordenadas y viewport. El viewport es el area visible de la imagen SVG. Tu puedes especificar el tamaño del viewport usando los atributos `width` and `height` del elemento svg. Si no especificas ninguna unidad dentro de estos atributos, se supone que las unidades son píxeles.
 
 ```
 <svg xlmns=”http://www.w3.org/2000/svg”   height="300" width="300" viewBox=”0 0 300 300”>
@@ -102,7 +102,7 @@ SVG tiene algunos elementos de forma predefinidos. La etiqueta `<circle>` nos pe
 <circle cx="150" cy="150" r="150" fill="yellow" />
 ```
 
-Los atributos `cx` y `cy` attributes definen las coordenadas "x" y "y" del centro del círculo. Si `cx` y `cy` son omitidos, el centro del círculo se establece en (0,0).
+Los atributos `cx` y `cy` definen las coordenadas "x" y "y" del centro del círculo. Si `cx` y `cy` son omitidos, el centro del círculo se establece en (0,0).
 
 El atributo `r` define el radio de el círculo.
 
@@ -119,9 +119,9 @@ De la misma forma, vamos a crear un segundo y tercero círculo más pequeños, p
 
 ### 4. Agregando una "path"
 
-Finalmente, vamos hacer la boca de nuestra carita feliz con una `<path>`. El elemento `<path>` puede ser usado para crear líneas, curvas, arcos y más
+Finalmente, vamos hacer la boca de nuestra carita feliz con una `<path>`. El elemento `<path>` puede ser usado para crear líneas, curvas, arcos y más.
 
-La forma de un elemento `<path>` es definido por un parametro `d`. El atributo `d`contiene una serie de comandos y parámetros usados por esos comandos. En nuestro ejemplo vamos a usar los siguientes comandos:
+La forma de un elemento `<path>` es definido por un parametro `d`. El atributo `d` contiene una serie de comandos y parámetros usados por esos comandos. En nuestro ejemplo vamos a usar los siguientes comandos:
 
 - `M` (Move to): El comando "Mover a" aparece al comienzo de todas las paths para especificar donde debe comenzar el dibujo. Se necesitan dos parámetros, una coordenada (x) y una coordenada (y) para moverse.
 
