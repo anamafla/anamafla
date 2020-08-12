@@ -18,7 +18,7 @@ export default function Template({ data }) {
         <SEO
           title={post.frontmatter.title}
           description={post.frontmatter.content}
-          image={post.frontmatter.image.childImageSharp.sizes.src}
+          image={post.frontmatter.image.childImageSharp.sizes}
           lang={lang}
         />
 
