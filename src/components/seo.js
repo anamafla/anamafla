@@ -41,8 +41,6 @@ function SEO({ description, lang, meta, keywords, title, image }) {
 
   const metaImage = origin + imageSrc
 
-  console.log("metaImage", metaImage)
-
   return (
     <Helmet
       htmlAttributes={{

@@ -18,7 +18,7 @@ export default function Template({ data }) {
         <SEO
           title={post.frontmatter.title}
           description={post.frontmatter.content}
-          image={post.frontmatter.image.childImageSharp.fluid.src}
+          image={post.frontmatter.image.childImageSharp.sizes.src}
           lang={lang}
         />
 
@@ -55,8 +55,11 @@ export const postQuery = graphql`
         date
         image {
           childImageSharp {
-            fluid(maxHeight: 250, maxWidth: 400) {
+            fluid {
               ...GatsbyImageSharpFluid
+            }
+            sizes(maxWidth: 600) {
+              ...GatsbyImageSharpSizes
             }
           }
         }
