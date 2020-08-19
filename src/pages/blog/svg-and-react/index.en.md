@@ -7,15 +7,15 @@ image: undraw_smiley_face_lmgm.png
 author: "Ana Mafla"
 ---
 
-SVG is used to define vector based graphics for the web. It's a Web standard for describing images that can be rendered cleanly at any size and are designed specifically to work well with other web standards, including JavaScript, DOM, CSS and HTML.
+SVG is used to define vector based graphics for the web. It's a web standard for describing images that can be rendered cleanly at any size and are designed specifically to work well with other web standards, including JavaScript, DOM, CSS and HTML.
 
 SVG is a graphic format that most closely meets current web development demands of scalability, responsiveness, interactivity, performance and accessibility.
 
 If you are interested in an introduction to SVG, take a look to my previous blog post: [Getting started with SVG](https://www.anamafla.com/blog/getting-started-with-svg/)
 
-The next question when you start to learn about SVG and the great things that are possible with this format of image is: how can I use the flexibility and versatility of SVG in my react projects?
+The next question I asked myself when I first started learning about SVG and the great things that are possible with this image format was: How can I use the flexibility and versatility of SVG in my react projects?
 
-In this post we are going to include a simple SVG graphic and animate it with React.
+In this post, we will describe how to include and animate a happy face made with SVG in a react application.
 
 ```
 <svg height="300" width="300">
@@ -30,9 +30,9 @@ In this post we are going to include a simple SVG graphic and animate it with Re
 
 We have two ways to use the SVG in a React application:
 
-### a. Import the SVG as a React Component.
+#### a. Import the SVG as a React Component.
 
-SVG can be imported and used directly as a React Component. This way is perfect for simple animations and styling with CSS and it's easy to update the SVG .
+SVG can be imported and used directly as a React Component. This way is perfect for simple animations and styling with CSS and it's easy to update the SVG.
 
 ```
 import { ReactComponent as Face} from “./face.svg”;
@@ -40,11 +40,11 @@ import { ReactComponent as Face} from “./face.svg”;
 const Smiley= ( ) => ( <Face/>);
 ```
 
-### b. Transform the SVG into JSX
+#### b. Transform the SVG into JSX
 
 Basically copying and pasting the content of the .svg file into our react code. This way allows us to make use of props, state and event handlers, although it is more complex to update the SVG.
 
-We are going to use the second way. Let’s take the SVG in the code above and turn it into a React component.
+In our example, we are going to use the second way. We toook the SVG from the above code and turn it into a React component.
 
 ```
 const Face = () => {
@@ -59,7 +59,7 @@ const Face = () => {
 }
 ```
 
-And then we are going to include our <Face/> component in our App.
+And then we are going to include our <Face/> component in App.
 
 ```
 const App = () => {
@@ -92,9 +92,7 @@ const Face = (props) => {
 }
 ```
 
-Now, we can change the color of our face, and the shape of its mouth.
-
-When we call our <Face> component, we are going to pass the required props: `color`, `x` and `y`.
+Now we can change the color of our face and the shape of its mouth. When we call our <Face> component, we are going to pass the required props: `color`, `x` and `y`.
 
 ```
 const App = () => {
@@ -113,7 +111,7 @@ const App = () => {
 
 We are going to add an animation, to make the mouth be drawn when we click on the face.
 
-React-spring is a great library that helps to build your animations. It’s a spring-physics based animation library, the engine behind react-springs works based on physics and it tries to animate your elements based on how they would if they were in the real world.
+React-spring is a spring-physics based animation library that helps to build your animations, the engine behind react-springs works based on physics and it tries to animate your elements based on how they would if they were in the real world.
 
 We’re going to need `useSpring` and `animated` from react-spring:
 
@@ -125,7 +123,7 @@ import { useSpring, animated } from “react-spring”;
 
 Adding some local state will allow us to add some actual interactions to our animation. Instead of `from` and `to`, we can use a ternary operator for our animations.
 
-First, we are going to define a state in our component for when the face is without a mouth (false) and with it is with a mouth (true). And this state will change when we click inside the face.
+First, we are going to define a state in our component for when the face is without a mouth (false) and with its mouth (true). And this state will change when we click inside the face.
 
 ```
 const [active, setActive] = useState(false);
