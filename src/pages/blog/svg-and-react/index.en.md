@@ -11,11 +11,20 @@ SVG is used to define vector based graphics for the web. It's a Web standard for
 
 SVG is a graphic format that most closely meets current web development demands of scalability, responsiveness, interactivity, performance and accessibility.
 
-If you are interested in an introduction to SVG, take a look to my previous blog post: Getting started with SVG
+If you are interested in an introduction to SVG, take a look to my previous blog post: [Getting started with SVG](https://www.anamafla.com/blog/getting-started-with-svg/)
 
 The next question when you start to learn about SVG and the great things that are possible with this format of image is: how can I use the flexibility and versatility of SVG in my react projects?
 
 In this post we are going to include a simple SVG graphic and animate it with React.
+
+```
+<svg height="300" width="300">
+   <circle cx="150" cy="150" r="150" fill="yellow" id="face" />
+   <circle cx="100" cy="100" r="15" fill="black" id="left-eye"/>
+   <circle cx="200" cy="100" r="15" fill="black" id="right-eye"/>
+   <path d="M 75 200 Q 150 260 225 200" stroke="black"  stroke-width="4" fill="none"/>
+</svg>
+```
 
 ## How to include SVG in a React application
 
@@ -40,7 +49,7 @@ We are going to use the second way. Let’s take the SVG in the code above and t
 ```
 const Face = () => {
   return(
-  <svg  height="300" width="300"  >
+  <svg height="300" width="300">
     <circle cx="150" cy="150" r="150" fill="yellow" id="face"/>
     <circle cx="100" cy="100" r="15" fill="black" id="left-eye"/>
     <circle cx="200" cy="100" r="15" fill="black" id="right-eye"/>
@@ -91,7 +100,7 @@ When we call our <Face> component, we are going to pass the required props: `col
 const App = () => {
   return (
     <>
-       <h1>Be Happy</h1>
+       <h1>Emotions</h1>
        <Face  color={"cyan"} x={150} y={130}/>
        <Face  color={"yellow"} x={150} y={260}/>
        <Face  color={"pink"} x={150} y={200}/>
@@ -152,3 +161,7 @@ To apply our spring animation, we need to add animated onto our html elements an
        strokeDasharray={animatedProps.strokeDasharray}
      />
 ```
+
+Here is a CodeSandbox you can play around with:
+
+https://codesandbox.io/s/react-and-svg-and-react-spring-e1p9u?fontsize=12&hidenavigation=1
