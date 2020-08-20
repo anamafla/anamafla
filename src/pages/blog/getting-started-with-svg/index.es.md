@@ -5,6 +5,8 @@ title: "Comenzando con SVG"
 content: "Este artículo es una introducción a SVG"
 image: undraw_icon_design_qvdf.png
 author: "Ana Mafla"
+keywords:
+  - "SVG"
 ---
 
 ## Que es SVG?

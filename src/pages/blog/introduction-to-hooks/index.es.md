@@ -5,6 +5,9 @@ title: "Introduccion a Hooks"
 content: "Este post es una  introduccion a React Hooks"
 image: undraw_task_31wc.png
 author: "Ana Mafla"
+keywords:
+  - "react"
+  - "hooks"
 ---
 
 React Hooks es una funcionalidad agregada en React 16.8, que te permite usar "estado" y otras características de React en componentes funcionales, algo que antes era exclusivo de las clases.

@@ -5,6 +5,8 @@ title: "Comenzar con React"
 content: "Cinco tips para hacer tu entrada al mundo de React más facil"
 image: undraw_react.png
 author: "Ana Mafla"
+keywords:
+  - "react"
 ---
 
 Todo el mundo esta hablando sobre React y tu estas interesado en comprender como funciona React, pero no sabes por donde deberías empezar.

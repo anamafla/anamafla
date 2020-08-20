@@ -20,6 +20,7 @@ export default function Template({ data }) {
           description={post.frontmatter.content}
           image={post.frontmatter.image.childImageSharp.sizes}
           lang={lang}
+          keywords={post.frontmatter.keywords}
         />
 
         <main>
@@ -53,6 +54,7 @@ export const postQuery = graphql`
         content
         author
         date
+        keywords
         image {
           childImageSharp {
             fluid {

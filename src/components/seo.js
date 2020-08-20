@@ -30,6 +30,8 @@ function SEO({ description, lang, meta, keywords, title, image: metaImage }) {
 
   const metaDescription = description || site.siteMetadata.description
 
+  const metaTitle = title || site.siteMetadata.title
+
   const image =
     metaImage && metaImage.src
       ? `${site.siteMetadata.siteUrl}${metaImage.src}`
@@ -40,8 +42,7 @@ function SEO({ description, lang, meta, keywords, title, image: metaImage }) {
       htmlAttributes={{
         lang,
       }}
-      title={title}
-      titleTemplate={`%s | ${site.siteMetadata.title}`}
+      title={metaTitle}
       meta={[
         {
           name: `description`,

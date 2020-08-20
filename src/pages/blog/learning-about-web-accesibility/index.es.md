@@ -5,6 +5,9 @@ title: "Aprendiendo sobre accesibilidad Web"
 content: "Este post es una introducción a la accesibilidad web"
 image: undraw_pedestrian_crossing.png
 author: "Ana Mafla"
+keywords:
+  - "accessibility"
+  - "a11y"
 ---
 
 Sin importar la tecnologia, framework o libreria en la cual estamos trabajando, hay principios en sobre los cuales el desarrollo web debe estar basado. Sin duda la accesibilidad es uno de esos.

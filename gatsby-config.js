@@ -7,7 +7,7 @@ const defaultLanguage = "en"
 
 module.exports = {
   siteMetadata: {
-    title: `Ana Mafla`,
+    title: `Ana Mafla - Front End Developer`,
     description: `Ana Mafla is a Front End Developer. She loves writing code, learning new technologies, and taking on new challenges`,
     author: `Ana Mafla`,
     url: `https://www.anamafla.com`,

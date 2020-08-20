@@ -5,6 +5,10 @@ title: "Como crear un blog con Gatsby"
 content: "Esta es una guia de como crear un blog usando Gatsby"
 image: undraw_blogging_vpvv.png
 author: "Ana Mafla"
+keywords:
+  - "gatsby"
+  - "react"
+  - "blog"
 ---
 
 Investigando sobre como crear mi blog, encontré que muchas personas estaban utilizando una herramienta llamada Gatsby.

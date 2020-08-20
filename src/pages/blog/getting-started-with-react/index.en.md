@@ -5,6 +5,8 @@ title: "Getting Started with React"
 content: "Five tips to make your entry into the world of React go smoother."
 image: undraw_react.png
 author: "Ana Mafla"
+keywords:
+  - "react"
 ---
 
 Everybody is talking about React and you are interested to understand how React works, but you don’t know where you should start.

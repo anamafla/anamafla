@@ -5,6 +5,9 @@ title: "Learning about Web Accessibility"
 content: "This post is an introduction to Web Accessibility"
 image: undraw_pedestrian_crossing.png
 author: "Ana Mafla"
+keywords:
+  - "accessibility"
+  - "a11y"
 ---
 
 Regardless of the technology, framework or library in which we are working on, there are principles in which web development must be based. Undoubtedly accessibility is one of those.

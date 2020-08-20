@@ -5,13 +5,18 @@ title: "SVG y React"
 content: "Este es un post sobre como usar SVGs en React"
 image: undraw_smiley_face_lmgm.png
 author: "Ana Mafla"
+keywords:
+  - "react"
+  - "SVG"
+  - "react-spring"
+  - "animacion"
 ---
 
 SVG se utiliza para definir gráficos basados en vectores para la web. Es un estándar web para describir imágenes que se puede representar de forma limpia en cualquier tamaño y estan diseñados especificamente para trabajar bien con otros estándares web, incluidos JavaScript, DOM, CSS and HTML.
 
 SVG es un formato gráfico que se adapta mejor a las demandas actuales de desarrollo web de escalabilidad, adaptabilidad, interactividad, desempeño y accesibilidad.
 
-Si estás interesado en una introducción a SVG, puedes dar un vistazo a mi publicación anterior: [Comenzando con SVG](https://www.anamafla.com/blog/getting-started-with-svg/)
+Si estás interesado en una introducción a SVG, puedes dar un vistazo a mi publicación anterior: [Comenzando con SVG](https://www.anamafla.com/es/blog/svg-and-react/)
 
 La siguiente pregunta que me hice cuando empecé a conocer sobre SVG y las cosas geniales que son posibles con este formato de imagen fue: Como puedo usar la flexibilidad y versatilidad de SVG en mis proyectos de React?
 
