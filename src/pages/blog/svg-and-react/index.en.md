@@ -2,7 +2,7 @@
 path: "/svg-and-react"
 date: "2020-08-20"
 title: "SVG and React"
-content: "This post is about how to use SVGs in React"
+content: "This post is about how to use SVG in React"
 image: undraw_smiley_face_lmgm.png
 author: "Ana Mafla"
 keywords:
@@ -20,7 +20,7 @@ If you are interested in an introduction to SVG, take a look to my previous blog
 
 The next question I asked myself when I first started learning about SVG and the great things that are possible with this image format was: How can I use the flexibility and versatility of SVG in my react projects?
 
-In this post, we will describe how to include and animate a happy face made with SVG in a react application.
+In this post, we will describe how to include and animate a smiley face made with SVG in a react application.
 
 ```
 <svg height="300" width="300">
