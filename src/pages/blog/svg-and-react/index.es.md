@@ -1,5 +1,5 @@
 ---
-path: "/svg-and-react"
+path: "/svg-y-react"
 date: "2020-08-20"
 title: "SVG y React"
 content: "Este es un post sobre como usar SVG en React"
