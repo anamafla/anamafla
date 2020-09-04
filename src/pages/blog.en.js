@@ -11,7 +11,7 @@ const BlogPage = ({ data }) => (
     <SEO
       title="Blog"
       description="Ana Mafla blog posts about web development"
-      keywords={[`web development`, `gatsby`, `react`, `react-hooks`]}
+      keywords={[`web development`, `gatsby`, `react`, `react-hooks`, `SVG`]}
     />
 
     <MDBContainer className="mt-5 pt-5">
