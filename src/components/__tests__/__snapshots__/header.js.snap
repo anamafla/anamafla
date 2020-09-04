@@ -1,0 +1,70 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header renders correctly 1`] = `
+<nav
+  className="fixed-top scrolling-navbar mdb-color darken-3 navbar navbar-expand-md"
+  data-test="navbar"
+  role="navigation"
+>
+  <div
+    className="container"
+    data-test="container"
+  >
+    <div
+      className="navbar-brand h2-responsive deep-purple-text "
+      data-test="navbar-brand"
+    >
+      <a
+        aria-current="page"
+        className=""
+        href="/"
+        onClick={[Function]}
+        onMouseEnter={[Function]}
+        style={Object {}}
+      >
+        <img
+          alt="logo"
+          className="img-fluid"
+          src="test-file-stub"
+          style={
+            Object {
+              "width": "60px",
+            }
+          }
+        />
+      </a>
+    </div>
+    <ul
+      className="navbar-nav ml-auto"
+      data-test="navbar-nav"
+    >
+      <li
+        className="nav-item"
+        data-test="nav-item"
+      >
+        <a
+          className="link-menu"
+          href="/#projects"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+        >
+          Projects
+        </a>
+      </li>
+      <li
+        className="nav-item"
+        data-test="nav-item"
+      >
+        <a
+          className="link-menu"
+          href="/blog"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+        >
+          Blog
+        </a>
+      </li>
+    </ul>
+  </div>
+</nav>
+`;

@@ -33,7 +33,14 @@
     "remark-react": "^6.0.0"
   },
   "devDependencies": {
-    "prettier": "^1.16.4"
+    "@testing-library/jest-dom": "^5.11.4",
+    "@testing-library/react": "^11.0.2",
+    "babel-jest": "^26.3.0",
+    "babel-preset-gatsby": "^0.5.8",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^26.4.2",
+    "prettier": "^1.16.4",
+    "react-test-renderer": "^16.13.1"
   },
   "keywords": [
     "gatsby"
@@ -45,7 +52,7 @@
     "format": "prettier --write src/**/*.{js,jsx}",
     "start": "npm run develop",
     "serve": "gatsby serve",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
+    "test": "jest"
   },
   "repository": {
     "type": "git",
