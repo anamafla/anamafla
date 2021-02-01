@@ -9,12 +9,22 @@
     "github": "https://github.com/anamafla/Reefa"
   },
   {
-    "title": "Recipes ",
+    "title": "Recipes",
     "slug": "",
     "url": "https://recipesearcher.netlify.com/",
     "image": "./images/recipes.png",
     "tools": "React.js(Hooks), Axios, React-router, Bootstrap, Edamam API",
     "description": "Allows you to find recipes to fit your lifestyle and health",
     "github": "https://github.com/anamafla/recipes"
+  },
+
+  {
+    "title": "Video Player",
+    "slug": "",
+    "url": "https://video-player-page.netlify.app/videos",
+    "image": "./images/video-player.png",
+    "tools": "React.js(Hooks), Apollo, Reach-router, Bootstrap, Graphql API",
+    "description": "Video player for online learning",
+    "github": "https://github.com/anamafla/video-player"
   }
 ]
