@@ -26,11 +26,11 @@ Tests are frequently grouped by where they are added in the software development
 
 ##Jest and React Testing Library
 
-Jest is an open-source testing framework built on JavaScript.
+**Jest** is an open-source testing framework built on JavaScript.
 
 A testing framework is an execution environment for automated tests. It is the overall system in which the tests will be automated. The testing framework is responsible for: defining the format in which to express expectations, executing the tests and reporting results.
 
-React-testing-library is a library for testing React components in a way that resembles the way the components are used by end users. React-testing-library is not a testing framework, the library requires a framework and they recommend Jest. You can write unit and integration tests.
+**React-testing-library** is a library for testing React components in a way that resembles the way the components are used by end users. React-testing-library is not a testing framework, the library requires a framework and they recommend Jest. You can write unit and integration tests.
 
 Projects created with Create React App come with Jest and React-testing-library configured.
 
@@ -55,7 +55,7 @@ We are going to deconstruct this example to understand exactly how this test wor
 
 ###Imports
 
-At the top, we have import statements.
+At the top, we have import statements:
 
 ```
 import { render, screen } from '@testing-library/react';
@@ -68,7 +68,7 @@ We also import the `App` component which we want to test.
 
 ###Test
 
-After we are calling the `test` function which is a method provided by Jest
+After we are calling the `test` function which is a method provided by Jest:
 
 ```
 test('renders learn react link', () => {
