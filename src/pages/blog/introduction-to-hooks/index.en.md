@@ -209,4 +209,4 @@ function App () {
 
 https://codepen.io/ANAMAFLA/pen/XwpOKb
 
-I hope this introduccion to hooks can be useful for you
+I hope this introduction to hooks can be useful for you

@@ -18,11 +18,11 @@ Un test es un código que escribimos para verificar el comportamiento de nuestra
 
 Los tests son frecuentemente clasificados por el momento del proceso de desarrollo en el que son agregados o por el nivel de especificidad del test. Generalmente existen los siguientes niveles de pruebas:
 
-- Test Unitario: Verifican que las partes individuales funcionan como se espera. El propósito es validar que cada unidad de software funciona como se espera.
+- **Test Unitario**: Verifican que las partes individuales funcionan como se espera. El propósito es validar que cada unidad de software funciona como se espera.
 
-- Test de Integración: Verifican que varias unidades funcionan juntas.
+- **Test de Integración**: Verifican que varias unidades funcionan juntas.
 
-- E2E : Prueban el sistema entero. Es como un robot que simula el comportamiento del usuario alrededor de la aplicación y verifica que funciona correctamente.
+- **E2E**: Prueban el sistema entero. Es como un robot que simula el comportamiento del usuario alrededor de la aplicación y verifica que funciona correctamente.
 
 ##Jest and React Testing Library
 
@@ -81,13 +81,13 @@ test('renders learn react link', () => {
 Este método describe la prueba en sí. Toma como parámetros el nombre de la prueba, una función que contiene las pruebas y el tiempo de espera (opcional) para especificar cuánto tiempo esperar antes de abortar.
 
 ```
-test(name, function, timeout)
+test(nombre, funcion, tiempo-de-espera)
 ```
 
-- name
+- **nombre:**
   El nombre de la prueba en este caso es “render learn react link”
 
-- function
+- **función:**
 
   ```
   () => {
@@ -146,4 +146,7 @@ npm run test
 
 Y finalmente obtienes el resultado de tu test:
 
-<img width=80% src="test-result.png" alt="Raster VS Vector image" />
+<img width=80% src="test-result.png" alt="resultado del test" />
+<br/>
+
+Espero que esta introducción a las pruebas en React pueda serte útil.

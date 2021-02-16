@@ -10,7 +10,7 @@ keywords:
   - "testing"
 ---
 
-This blog post is a first approach to learn how to test React components. The goal is to provide a guide to get started in testing, understanding how the tests work and how we can run our first test in our React application.
+This blog post is the first approach to learn how to test React components. The goal is to provide a guide to get started in testing, understanding how the tests work and how we can run our first test in our React application.
 
 ##What is a test?
 
@@ -18,11 +18,11 @@ A test is a code that we write to verify the behavior of our application to ensu
 
 Tests are frequently grouped by where they are added in the software development process, or by the level of specificity of the test. There are generally the following levels of testing:
 
-- Unit Test: Verify that individual, isolated parts work as expected. The purpose is to validate that each unit of the software code performs as expected.
+- **Unit Test**: Verify that individual, isolated parts work as expected. The purpose is to validate that each unit of the software code performs as expected.
 
-- Integration Test: Verify that several units work together
+- **Integration Test**: Verify that several units work together
 
-- E2E: Test the entire system. Kind of like a robot that simulates user behavior around the app and verifies that it functions correctly.
+- **E2E**: Test the entire system. Kind of like a robot that simulates user behavior around the app and verifies that it functions correctly.
 
 ##Jest and React Testing Library
 
@@ -78,16 +78,16 @@ expect(linkElement).toBeInTheDocument();
 });
 ```
 
-This method describes the test itself. It takes as parameters the `name` of the test, a `function` that holds the tests and timeout (optional) for specifying how long to wait before aborting.
+This method describes the test itself. It takes as parameters the `name` of the test, a `function` that holds the tests, and `timeout` (optional) for specifying how long to wait before aborting.
 
 ```
 test(name, function, timeout)
 ```
 
-- name
+- **name:**
   The name of the test in this case is “render learn react link”
 
-- function
+- **function:**
 
   ```
   () => {
@@ -144,6 +144,8 @@ This means that you can run your tests typing:
 npm run test
 ```
 
-And finally you get the result of your test:
+And finally, you get the result of your test:
 
-<img width=80% src="test-result.png" alt="Raster VS Vector image" />
+<img width=90% src="test-result.png" alt="test result" />
+<br/>
+I hope this introduction to testing can be useful for you.
